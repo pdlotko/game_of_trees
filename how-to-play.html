@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Play the Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Navigation bar styling */
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .nav-bar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .nav-bar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Page content styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      height: auto; /* Ensure body height adapts to content */
+      overflow-y: auto; /* Allow vertical scrolling */
+    }
+
+    .content {
+      margin-top: 70px; /* Avoid overlap with navigation bar */
+      padding: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      font-size: 36px; /* Larger font size for the main title */
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #444;
+      font-size: 28px; /* Larger font size for section headers */
+      margin-bottom: 20px;
+    }
+
+    p, ul {
+      text-align: justify;
+      font-size: 18px; /* Larger font size for tutorial text */
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .image-placeholder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      border: 2px dashed #ccc;
+      height: 200px;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .image-placeholder span {
+      font-size: 16px;
+      color: #999;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        padding: 10px;
+      }
+
+      .nav-bar a {
+        font-size: 16px;
+        margin: 0 10px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p, ul {
+        font-size: 16px;
+      }
+
+      .image-placeholder {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="how-to-play.html">How to Play the Game</a>
+    <a href="contact-us.html">Contact Us</a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h1>How to Play the Game</h1>
+    
+    <h2>Introduction</h2>
+    <p>
+      Welcome to the "Game of Trees and Graphs"! This game is designed to introduce you to basic concepts of graph theory while having fun. You'll enhance your logical thinking and learn about combinations as you play.
+    </p>
+
+    <h2>Getting Started</h2>
+    <p>
+      Grab a pen and paper to begin. First, draw several dots (we call these vertices) and enumerate them. Keep it simple. Once done, add line segments connecting the vertices (we call these edges). Your drawing will resemble a graph.
+    </p>
+    <div class="image-placeholder">
+      <span>Placeholder for an image of a simple graph</span>
+    </div>
+
+    <h2>Understanding Graph Components</h2>
+    <p>
+      A graph consists of connected components. For example, a graph with two separate groups of vertices is said to have two connected components. Vertices in the same connected component can be reached through edges, while vertices in different components cannot.
+    </p>
+    <div class="image-placeholder">
+      <span>Placeholder for an image showing connected components</span>
+    </div>
+
+    <h2>What Are Trees?</h2>
+    <p>
+      A tree is a special type of graph with one connected component and no cycles. Cycles occur when you can start from one vertex, travel through a sequence of edges, and return to the starting vertex without retracing your steps.
+    </p>
+    <div class="image-placeholder">
+      <span>Placeholder for an image of a tree graph</span>
+    </div>
+
+    <h2>Paths in a Graph</h2>
+    <p>
+      A path is a sequence of vertices connected by edges, where no vertex is repeated. For example, in a tree graph, the path <code>1 → 2 → 3 → 7 → 6</code> has a length of 4, as it crosses four edges. Paths have different lengths, and the game involves identifying paths of various lengths.
+    </p>
+    <div class="image-placeholder">
+      <span>Placeholder for an image showing a path in a graph</span>
+    </div>
+
+    <h2>The Game</h2>
+    <p>
+      The game challenges you to reconstruct trees from given path-length vectors. Each vector represents the number of paths of specific lengths in the tree. For example, the vector <code>{7, 6, 6, 6, 2}</code> corresponds to a tree with 7 paths of length 0, 6 paths of length 1, and so on.
+    </p>
+    <div class="image-placeholder">
+      <span>Placeholder for an image of a tree with a path-length vector</span>
+    </div>
+
+    <h2>How to Play</h2>
+    <ul>
+      <li>Access tasks grouped by the number of vertices in the tree.</li>
+      <li>For each task, use the provided vector to construct the tree.</li>
+      <li>You can use matches, sticks, or anything at your disposal to create the graph.</li>
+      <li>Once done, verify your solution by comparing it to the provided tree file.</li>
+    </ul>
+
+    <h2>Learning Outcomes</h2>
+    <p>
+      By playing this game, you'll gain a hands-on understanding of:
+      <ul>
+        <li>Graphs, vertices, edges, and connected components</li>
+        <li>Tree structures and their properties</li>
+        <li>Graph isomorphism, which involves comparing graphs for equivalence</li>
+      </ul>
+    </p>
+  </div>
+</body>
+</html>

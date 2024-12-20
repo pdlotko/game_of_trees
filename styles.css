@@ -1,0 +1,37 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+  color: lavender; /* Changed text color to lavender */
+  text-shadow: 2px 2px 5px black;
+  opacity: 0; /* Initial state for animation */
+  animation: fadeInSlideDown 2s forwards;
+}
+
+/* Animation for text */
+@keyframes fadeInSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

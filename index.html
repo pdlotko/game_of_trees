@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of Trees</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Styling for the navigation bar */
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+      position: fixed; /* Fixed position to keep it at the top */
+      top: 0;
+      width: 100%; /* Stretch across the full width of the page */
+      z-index: 1000; /* Ensure it stays above other content */
+    }
+
+    .nav-bar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .nav-bar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    .content {
+      text-align: center;
+      margin-top: 80px; /* Add margin to avoid overlapping the nav-bar */
+    }
+
+    .store-buttons {
+      margin-top: 30px; /* Add spacing above the buttons */
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Add spacing between buttons */
+    }
+
+    .store-buttons img {
+      width: 150px; /* Set consistent size for both buttons */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="how-to-play.html">How to Play the Game</a>
+    <a href="contact-us.html">Contact Us</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1 class="animated-text">GAME OF TREES</h1>
+    <div class="gif-container">
+      <img src="graph_animation_structure.gif" alt="Graph Animation" style="width:100%; max-width:400px;">
+    </div>
+
+    <!-- Store Buttons Below the GIF -->
+    <div class="store-buttons">
+      <!-- Google Play -->
+      <a href="https://play.google.com/store" target="_blank">
+        <img src="GetItOnGooglePlay.png" alt="Get it on Google Play">
+      </a>
+      <!-- Apple Store -->
+      <a href="https://www.apple.com/app-store/" target="_blank">
+        <img src="Download_on_the_App_Store.svg" alt="Download on the App Store">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
