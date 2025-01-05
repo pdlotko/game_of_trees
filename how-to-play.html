@@ -136,41 +136,42 @@
     <p>
       Grab a pen and paper to begin. First, draw several dots (we call these vertices) and enumerate them. Keep it simple. Once done, add line segments connecting the vertices (we call these edges). Your drawing will resemble a graph.
     </p>
-    <div class="image-placeholder">
-      <span>Placeholder for an image of a simple graph</span>
-    </div>
+    <img src="basic_graph.jpg" alt="Dwaring of a simple graph" width="500">
 
     <h2>Understanding Graph Components</h2>
     <p>
-      A graph consists of connected components. For example, a graph with two separate groups of vertices is said to have two connected components. Vertices in the same connected component can be reached through edges, while vertices in different components cannot.
+      A graph consists of connected components. For example, a graph above, with two separate groups of vertices is said to have two connected components. Vertices in the same connected component can be connected with a sequence of edges, while vertices in different components cannot.
     </p>
-    <div class="image-placeholder">
-      <span>Placeholder for an image showing connected components</span>
-    </div>
 
     <h2>What Are Trees?</h2>
     <p>
       A tree is a special type of graph with one connected component and no cycles. Cycles occur when you can start from one vertex, travel through a sequence of edges, and return to the starting vertex without retracing your steps.
     </p>
-    <div class="image-placeholder">
-      <span>Placeholder for an image of a tree graph</span>
-    </div>
+    <img src="trees_and_cycles.jpg" alt="Left, a graph with a cycle. Right, a tree - connected graph with no cycle" width="500">
+
+
 
     <h2>Paths in a Graph</h2>
     <p>
-      A path is a sequence of vertices connected by edges, where no vertex is repeated. For example, in a tree graph, the path <code>1 → 2 → 3 → 7 → 6</code> has a length of 4, as it crosses four edges. Paths have different lengths, and the game involves identifying paths of various lengths.
+      A path is a sequence of vertices connected by edges, where no vertex is repeated. For example, in a tree graph, the path <code>1 → 2 → 3 → 5</code> has a length of 3, as it crosses three edges.
+      Paths have different lengths, and the game involves identifying paths of various lengths.
     </p>
-    <div class="image-placeholder">
-      <span>Placeholder for an image showing a path in a graph</span>
-    </div>
+    <img src="path_in_tree.jpg" alt="A tree with labeled vertices" width="500">
+    <p>
+      In this case, this tree have 5 paths of length 0 (L0), menaing the vetices. It has 4 paths of lenght 1, namely edges <code>1 → 2</code>, <code>2 → 3</code>, <code>2 → 4</code>, <code>3 → 5</code>.
+      There are also four paths of length 2 (L2): <code>1 → 2 → 3</code>, <code>1 → 2 → 4</code>, <code>4 → 2 → 3</code>, <code>2 → 3 → 5</code>. Lastly, two paths of length three (L3) are present:
+      <code>1 → 2 → 3 → 5</code> and <code>4 → 2 → 3 → 5</code>. There are no longer paths than that. Therefore we can characterize the above graph with a sequence of numers:
+      (L0: 5, L1: 4, L2: 4, L3: 2).
+    </p>
 
     <h2>The Game</h2>
     <p>
-      The game challenges you to reconstruct trees from given path-length vectors. Each vector represents the number of paths of specific lengths in the tree. For example, the vector <code>{7, 6, 6, 6, 2}</code> corresponds to a tree with 7 paths of length 0, 6 paths of length 1, and so on.
+      The game challenges you to reconstruct trees from given path-length vectors. Each vector represents the number of paths of specific lengths in the tree.
+      For example, the vector <code>{6, 5, 5, 3, 2}</code> corresponds to a tree with 6 paths of length zero (vertices), 5 paths of length one (edges), 5
+      paths of length two, 3 paths of length three and 2 paths of lenth four.
     </p>
-    <div class="image-placeholder">
-      <span>Placeholder for an image of a tree with a path-length vector</span>
-    </div>
+    <img src="tree_from_characteristic_vector.jpg" alt="Tree with characteristic vector L0: 6, L1: 5, L2: 5, L3: 3, L4: 2" width="500">
+
 
     <h2>How to Play</h2>
     <ul>
