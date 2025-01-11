@@ -35,72 +35,40 @@
       margin: 0;
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      height: auto;
-      overflow-y: auto;
       background-color: #f9f9f9;
     }
 
     .content {
       margin-top: 70px; /* Avoid overlap with navigation bar */
       padding: 20px;
-      max-width: 800px;
+      max-width: 600px;
       margin-left: auto;
       margin-right: auto;
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
       color: #333;
       font-size: 36px;
       margin-bottom: 20px;
     }
 
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    label {
-      display: block;
-      font-size: 16px;
-      margin-bottom: 5px;
+    .contact-info {
+      font-size: 18px;
       color: #555;
+      line-height: 1.8;
     }
 
-    input, textarea, button {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
+    .contact-info a {
+      color: #007BFF;
+      text-decoration: none;
     }
 
-    textarea {
-      resize: vertical;
-      height: 100px;
-    }
-
-    button {
-      background-color: #333;
-      color: white;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #555;
-    }
-
-    .success-message {
-      text-align: center;
-      color: green;
-      font-size: 16px;
-      margin-top: 15px;
+    .contact-info a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -115,21 +83,10 @@
   <!-- Page Content -->
   <div class="content">
     <h1>Contact Us</h1>
-    <form action="submit_contact.php" method="POST">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your full name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your email address" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
-      </div>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="contact-info">
+      <strong>Pawel Dlotko</strong><br>
+      <a href="mailto:message.game.of.trees@gmail.com">message.game.of.trees@gmail.com</a>
+    </div>
   </div>
 </body>
 </html>

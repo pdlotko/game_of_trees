@@ -6,6 +6,10 @@
   <title>Game of Trees</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+
+
+
+
     /* Styling for the navigation bar */
     .nav-bar {
       display: flex;
@@ -36,8 +40,22 @@
       margin-top: 80px; /* Add margin to avoid overlapping the nav-bar */
     }
 
+    .gif-container {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .gif-container img {
+        display: block;
+        margin: 0 auto;
+        width: 100%; /* Adjust to control relative size */
+        max-width: 400px; /* Maximum width in pixels */
+        min-width: 400px; /* Minimum width for responsiveness */
+        height: auto; /* Maintain aspect ratio */
+    }
+
     .store-buttons {
-      margin-top: 30px; /* Add spacing above the buttons */
+      margin-top: 20px; /* Add spacing above the buttons */
       display: flex;
       justify-content: center;
       gap: 20px; /* Add spacing between buttons */
@@ -47,13 +65,17 @@
       width: 150px; /* Set consistent size for both buttons */
       height: auto; /* Maintain aspect ratio */
     }
+	
+	.animated-text {
+    color: #FF007F; /* Change this to any color you like */
+    }
   </style>
 </head>
 <body>
   <!-- Navigation Bar -->
   <div class="nav-bar">
     <a href="index.html">Home</a>
-    <a href="how-to-play.html">How to Play the Game</a>
+    <a href="how-to-play.html">How to Play</a>
     <a href="contact-us.html">Contact Us</a>
   </div>
 
@@ -61,17 +83,17 @@
   <div class="content">
     <h1 class="animated-text">GAME OF TREES</h1>
     <div class="gif-container">
-      <img src="graph_animation_structure.gif" alt="Graph Animation" style="width:100%; max-width:400px;">
+      <img src="graph_animation_structure.gif" alt="Graph Animation">
     </div>
 
     <!-- Store Buttons Below the GIF -->
     <div class="store-buttons">
       <!-- Google Play -->
-      <a href="https://play.google.com/store/apps/details?id=com.pdlotko.gameoftrees&hl=en_US" target="_blank">
+      <a href="https://play.google.com/store" target="_blank">
         <img src="GetItOnGooglePlay.png" alt="Get it on Google Play">
       </a>
       <!-- Apple Store -->
-      <a href="https://apps.apple.com/ae/app/game-of-trees/id1609782078" target="_blank">
+      <a href="https://www.apple.com/app-store/" target="_blank">
         <img src="Download_on_the_App_Store.svg" alt="Download on the App Store">
       </a>
     </div>
